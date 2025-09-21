@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="courses.css">
+    <title>JavaScript</title>
+</head>
+<body>
+    <header>
+        <div class="logo">OliverCourse</div>
+        <nav>
+            <ul>
+                <li><a href="landing.html">Home</a></li>
+                <li><a href="landing.html#courses">Courses</a></li>
+                <li><a href="#" class="call-to-action">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Pengenalan JavaScript</h1>
+        <p>
+            JavaScript adalah bahasa pemrograman yang digunakan untuk membuat halaman web menjadi 
+            interaktif dan dinamis. Dengan JavaScript, kita bisa menambahkan logika, animasi, 
+            validasi form, hingga komunikasi dengan server.
+        </p>
+
+        <h2>Contoh Dasar JavaScript</h2>
+        <pre>
+            &lt;script&gt;
+                // Menampilkan pesan di console
+                console.log("Halo dunia!");
+
+                // Membuat interaksi dengan user
+                alert("Selamat datang di website ini!");
+            &lt;/script&gt;
+        </pre>
+
+        <h2>Fungsi JavaScript</h2>
+        <pre>
+            function sapa(nama) {
+                return "Halo, " + nama + "!";
+            }
+
+            console.log(sapa("Oliver")); // Output: Halo, Oliver!
+        </pre>
+
+        <h2>DOM (Document Object Model)</h2>
+        <p>
+            JavaScript bisa mengakses dan mengubah elemen HTML melalui DOM.
+        </p>
+        <pre>
+            &lt;button onclick="ubahTeks()"&gt;Klik Saya&lt;/button&gt;
+
+            &lt;p id="pesan"&gt;Teks awal&lt;/p&gt;
+
+            &lt;script&gt;
+                function ubahTeks() {
+                    document.getElementById("pesan").innerText = "Teks sudah berubah!";
+                }
+            &lt;/script&gt;
+        </pre>
+
+        <h2>Kesimpulan</h2>
+        <p>
+            JavaScript adalah bahasa pemrograman inti di web modern. 
+            Setelah menguasai dasar-dasarnya, kamu bisa melanjutkan ke topik seperti 
+            ES6+, API, Asynchronous JavaScript (Promise & Async/Await), serta framework populer 
+            seperti React, Vue, atau Angular.
+        </p>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h2>OliverCourse</h2>
+                <p>Platform belajar pemrograman interaktif untuk developer Indonesia.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="https://www.geeksforgeeks.org/">Geek4Geeks</a></li>
+                    <li><a href="https://www.dicoding.com/">Dicoding</a></li>
+                    <li><a href="https://www.udemy.com">Udemy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul>
+                    <li>Email: <a href="mailto:oliveryan194@gmail.com">support@olivercourse.com</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            © 2025 OliverCourse. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>

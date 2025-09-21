@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="courses.css">
+    <title>PHP</title>
+</head>
+<body>
+    <header>
+        <div class="logo">OliverCourse</div>
+        <nav>
+            <ul>
+                <li><a href="landing.html">Home</a></li>
+                <li><a href="landing.html#courses">Courses</a></li>
+                <li><a href="#" class="call-to-action">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Pengenalan PHP</h1>
+        <p>
+            PHP (Hypertext Preprocessor) adalah bahasa pemrograman sisi server yang digunakan untuk 
+            membangun aplikasi web dinamis. PHP dapat berinteraksi dengan database, memproses form, 
+            hingga menghasilkan konten yang berbeda sesuai kebutuhan pengguna.
+        </p>
+
+        <h2>Contoh Dasar PHP</h2>
+        <pre>
+            &lt;?php
+                echo "Halo, dunia!";
+            ?&gt;
+        </pre>
+
+        <h2>Variabel dan Operator</h2>
+        <pre>
+            &lt;?php
+                $nama = "Oliver";
+                $umur = 20;
+
+                echo "Nama saya $nama dan umur saya $umur tahun.";
+            ?&gt;
+        </pre>
+
+        <h2>Koneksi ke Database</h2>
+        <p>PHP bisa digunakan untuk terhubung ke database MySQL dan melakukan query.</p>
+        <pre>
+            &lt;?php
+                $conn = new mysqli("localhost", "user", "password", "database");
+
+                if ($conn-&gt;connect_error) {
+                    die("Koneksi gagal: " . $conn-&gt;connect_error);
+                }
+
+                $result = $conn-&gt;query("SELECT * FROM users");
+
+                while ($row = $result-&gt;fetch_assoc()) {
+                    echo $row["username"] . "&lt;br&gt;";
+                }
+
+                $conn-&gt;close();
+            ?&gt;
+        </pre>
+
+        <h2>Kesimpulan</h2>
+        <p>
+            PHP sangat populer untuk pengembangan web karena fleksibel dan mudah dipelajari. 
+            Setelah memahami dasar, kamu bisa lanjut mempelajari framework seperti 
+            Laravel, CodeIgniter, atau Symfony untuk membangun aplikasi skala besar.
+        </p>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-brand">
+                <h2>OliverCourse</h2>
+                <p>Platform belajar pemrograman interaktif untuk developer Indonesia.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Resources</h3>
+                <ul>
+                    <li><a href="https://www.geeksforgeeks.org/">Geek4Geeks</a></li>
+                    <li><a href="https://www.dicoding.com/">Dicoding</a></li>
+                    <li><a href="https://www.udemy.com">Udemy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <ul>
+                    <li>Email: <a href="mailto:oliveryan194@gmail.com">support@olivercourse.com</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            © 2025 OliverCourse. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>

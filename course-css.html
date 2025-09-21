@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="courses.css">
+    <title>CSS</title>
+</head>
+<body>
+    <header>
+        <div class="logo">OliverCourse</div>
+        <nav>
+            <ul>
+                <li><a href="landing.html">Home</a></li>
+                <li><a href="landing.html#courses">Courses</a></li>
+                <li><a href="#" class="call-to-action">Sign In</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Pengenalan CSS</h1>
+        <p>
+            CSS (Cascading Style Sheets) adalah bahasa yang digunakan untuk mengatur tampilan 
+            dan desain halaman web. Dengan CSS, kita bisa mengontrol warna, font, ukuran, 
+            tata letak, hingga efek animasi pada elemen HTML.
+        </p>
+
+        <h2>Struktur Dasar CSS</h2>
+        <pre>
+            selector {
+                property: value;
+            }
+        </pre>
+        <p>
+            <b>Selector</b> digunakan untuk memilih elemen HTML yang ingin diubah, 
+            <b>property</b> adalah atribut tampilan yang diatur, dan 
+            <b>value</b> adalah nilai yang diberikan.
+        </p>
+
+        <h2>Cara Menghubungkan CSS</h2>
+        <ul>
+            <li><b>Inline CSS</b>: ditulis langsung pada atribut <code>style</code> di elemen HTML.</li>
+            <li><b>Internal CSS</b>: ditulis di dalam tag <code>&lt;style&gt;</code> di bagian <code>&lt;head&gt;</code>.</li>
+            <li><b>External CSS</b>: ditulis di file terpisah (.css) lalu dihubungkan dengan <code>&lt;link&gt;</code>.</li>
+        </ul>
+
+        <h2>Contoh</h2>
+        <pre>
+            /* External CSS (style.css) */
+            body {
+                background-color: #f0f0f0;
+                font-family: Arial, sans-serif;
+            }
+
+            h1 {
+                color: blue;
+                text-align: center;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 1.5;
+            }
+        </pre>
+
+        <h2>Selektor Umum</h2>
+        <ul>
+            <li><b>Elemen</b>: memilih berdasarkan tag (contoh: <code>p</code>, <code>h1</code>).</li>
+            <li><b>Kelas (.class)</b>: memilih berdasarkan atribut <code>class</code>.</li>
+            <li><b>ID (#id)</b>: memilih berdasarkan atribut <code>id</code>.</li>
+            <li><b>Universal (*)</b>: memilih semua elemen.</li>
+        </ul>
+
+        <h2>Kesimpulan</h2>
+        <p>
+            CSS sangat penting untuk mempercantik dan memperjelas tampilan website. 
+            Setelah memahami CSS dasar, kita bisa lanjut ke topik lanjutan seperti 
+            Flexbox, Grid, dan Animasi.
+        </p>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+        <div class="footer-brand">
+            <h2>OliverCourse</h2>
+            <p>Platform belajar pemrograman interaktif untuk developer Indonesia.</p>
+        </div>
+
+        <div class="footer-section">
+            <h3>Resources</h3>
+            <ul>
+                <li><a href="https://www.geeksforgeeks.org/">Geek4Geeks</a></li>
+                <li><a href="https://www.dicoding.com/">Dicoding</a></li>
+                <li><a href="https://www.udemy.com">Udemy</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h3>Contact</h3>
+            <ul>
+            <li>Email: <a href="mailto:oliveryan194@gmail.com">support@olivercourse.com</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-bottom">
+        © 2025 OliverCourse. All rights reserved.
+        </div>
+    </footer>
+</body>
+</html>
